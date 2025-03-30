@@ -1,8 +1,8 @@
 ﻿# DeepFalcon-Evaluation-Tasks
 
-## Graph Representation Learning for Fast Detector Simulation
+## Graph Transformers for Fast Detector Simulation
 
-This repository contains the notebooks and models for the tasks I have completed for the project "Graph Representation Learning for Fast Detector Simulation" for GSoC 2025
+This repository contains the notebooks and models for the tasks I have completed for the project "Graph Transformers for Fast Detector Simulation" for GSoC 2025
 
 ## Tasks I Completed
 
