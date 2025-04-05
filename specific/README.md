@@ -10,7 +10,7 @@ This notebook focuses on implementing a Transformer-based generative model for j
     * Generated latent mean vectors (`mu`) for a *subset* of the training images using the loaded VAE encoder.
     * Fitted K-Means models (`NUM_BINS=256`) independently to each of the 128 dimensions using the subset latent vectors.
     * Stored the resulting cluster/bin centers for each dimension.
-4.  **Training Code Generation:** Encoded the *entire* training dataset (`X_jets_normalized[train_indices]`) using the VAE encoder and converted the resulting continuous latent vectors into sequences of discrete integer codes (length 128) by assigning each dimension's value to its nearest pre-computed bin center index. This was done batch-wise for memory efficiency.
+4.  **Training Discrete Code Generation:** Encoded the *entire* training dataset (`X_jets_normalized[train_indices]`) using the VAE encoder and converted the resulting continuous latent vectors into sequences of discrete integer codes (length 128) by assigning each dimension's value to its nearest pre-computed bin center index. This was done batch-wise for memory efficiency.
 5.  **Transformer Model:** Implemented a decoder-only autoregressive `GenerativeTransformer` model with standard components (embedding layer for codes, positional encoding, multiple Transformer decoder layers with causal self-attention, final linear layer predicting logits over bins).
 6.  **Transformer Training:**
     * Trained the `GenerativeTransformer` on the sequences of discrete codes (`train_codes_tensor`).
