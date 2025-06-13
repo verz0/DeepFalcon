@@ -1,12 +1,4 @@
-﻿# DeepFalcon-Evaluation-Tasks
-
-## Graph Transformers for Fast Detector Simulation
-
-This repository contains the notebooks and models for the tasks I have completed for the project "Graph Transformers for Fast Detector Simulation" for GSoC 2025
-
-## Tasks I Completed
-
-I've structured the repository based on the tasks I completed:
+## Tasks
 
 1.  **Common Task 1. Auto-encoder of the quark/gluon events (`common1/`)**
     * Implemented and trained a VAE using CNNs to learn compressed representations of the 3-channel jet images.
